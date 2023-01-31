@@ -1,0 +1,353 @@
+/*
+Theme Name: Vida Freelancer
+Theme URI: 
+Author: Juan Pablo De la torre Valdez
+Author URI: https://twitter.com/JuanDevWP
+Description: Theme para vidafreelancer, 100% custom made by @juandevwp
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+:root {
+    font-size: 16px;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: .5rem 0;
+}
+@font-face {
+    font-family: "BebasNeue-Bold";
+    src: url("fonts/BebasNeue-Bold.eot?v=1.0.4");
+    src: url("fonts/BebasNeue-Bold.eot?#iefix&v=1.0.4") format("embedded-opentype"), url("fonts/BebasNeue-Bold.woff2?v=1.0.4") format("woff2"), url("fonts/BebasNeue-Bold.woff?v=1.0.4") format("woff"), url("fonts/BebasNeue-Bold.ttf?v=1.0.4") format("truetype"), url("fonts/BebasNeue-Bold.svg?v=1.0.4#BebasNeueBold") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("fonts/BebasNeue-Regular.eot?v=1.0.4");
+    src: url("fonts/BebasNeue-Regular.eot?#iefix&v=1.0.4") format("embedded-opentype"), url("fonts/BebasNeue-Regular.woff2?v=1.0.4") format("woff2"), url("fonts/BebasNeue-Regular.woff?v=1.0.4") format("woff"), url("fonts/BebasNeue-Regular.ttf?v=1.0.4") format("truetype"), url("fonts/BebasNeue-Regular.svg?v=1.0.4#BebasNeueRegular") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+html { box-sizing: border-box; }
+body { font-family: 'Lato', Arial, Helvetica, sans-serif; color: #414141;} 
+*, *:before, *:after { box-sizing: inherit; }
+h1, h2, h3 { font-family: "BebasNeue-Bold"; }
+h2 { font-size: 4rem; margin: 0; padding: 3rem 0 2rem; }
+h3 { font-size: 2rem; margin: 0;   }
+
+.bg-azul { background-color: #25a5d5; }
+.bg-blanco { background-color: white; }
+.blanco { color: white; }
+.centrar-texto { text-align: center; }
+.sombra { 
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.21);
+    border-radius: 10px;
+}
+.subtitulo,
+.texto-newsletter {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #82bd58; 
+    font-family: 'Caveat', cursive;
+     font-weight: 700;
+}
+.texto-newsletter {
+    font-size: 2rem;
+}
+.boton {
+    font-family: "BebasNeue-Bold";
+    background-color: #82bd58;
+    padding: .4rem 0 .2rem 0;
+    flex: 0 0 100%;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+} 
+.boton:hover {
+    background-color: #6faf41;
+}
+.boton-cursos {
+    background-color: white;
+    margin-top: 1rem;
+    padding: .5rem 5rem .3rem 5rem;
+    width: auto;
+    color: #25a5d5;
+}
+.boton-cursos:hover {
+    background-color: #444;
+}
+.nombre-sitio {
+    margin: 0 0 0rem 2rem;
+    font-size: 4rem;
+    color: white;
+    line-height: 6rem;
+}
+@media (min-width:768px) {
+    .nombre-sitio {
+        font-size: 6rem;
+        width: 50%;
+        line-height: 8rem;
+    }
+}
+.nombre-sitio span {
+    background-color: #c0c;
+    color: #fff; 
+    display: inline;
+    padding: 1.45rem 1.45rem 1rem 1.45rem;
+    margin-left: 0rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-color: #414141;
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/** Header Interior **/
+.encabezado-interior {
+    background-color: #25a5d5;   
+    padding: 2rem 0;
+}
+.encabezado-interior .nombre-sitio {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .encabezado-interior .nombre-sitio {
+        text-align: left;
+    }
+}
+.encabezado-interior .contenido-header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .encabezado-interior .contenido-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.encabezado-interior .contenido-header a { text-decoration: none; }
+.encabezado-interior .nombre-sitio span { display: inline; }
+@media (min-width:550px) {
+    .encabezado-interior .nombre-sitio span { display: inline-block; }  
+}
+.encabezado-interior .navegaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+@media (min-width:768px) {
+    .encabezado-interior .navegaciones  { align-items: flex-end; padding-top: 1rem; }
+}
+.menu-header ul, 
+.menu-header li { margin: 0; padding: 0; list-style: none; }
+.menu-header li a {
+    font-family: "BebasNeue-Bold";
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.menu-header li a:hover { border-bottom: 2px solid white; }
+/** Fin Header Interior **/
+.site-header {
+    background: url('img/bg-top.svg') top right no-repeat, 
+                #25a5d5;
+    background-size: 300%, 100px;
+}
+@media (min-width:768px) {
+    .site-header  {
+        background: url('img/bg-top.svg') right top no-repeat, 
+        url('img/bg-bottom.svg') bottom right no-repeat, 
+        #25a5d5;
+        background-size: 100%, 600px;
+    }
+}
+.contenido-header {
+    height: 950px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
+.contenido-header p {
+    color: white;
+    font-size: 2rem;
+    margin: 0 2rem 0 2.2rem;
+    font-family: "BebasNeue-Regular";
+    line-height: 5rem;
+    background-color: #25a5d5;
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+/** Guia **/
+img { width: 100%; height: auto;
+}
+.d-flex {
+    display: flex; align-items: center; flex-wrap: wrap;
+}
+.columna { flex: 1 0 100%; }
+@media (min-width:768px) {
+    .d-flex { justify-content: space-between; }
+    .columna { flex: 0 0 calc(50% - 1rem);  }
+}
+
+/** Footer **/
+#menu-header-menu,
+#menu-header-menu-1 {
+    display: flex;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+#menu-header-menu li,
+#menu-header-menu-1 li {
+    margin-right: 2rem;
+}
+#menu-header-menu li:last-of-type,
+#menu-header-menu-1 li:last-of-type {
+    margin-right: 0;
+}
+.site-footer {
+    background-color: #414141;
+    padding: 4rem 0;
+   font-family: "BebasNeue-Regular";
+}
+.site-footer a,
+.site-footer p {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.site-footer a:hover { color: #82bd58; }
+.site-footer p { font-size: 1.2rem; }
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .contenido-footer { flex-direction: row; }
+}
+/** Blog **/
+.contenido-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contenido-blog main, 
+.contenido-blog aside {
+    flex: 0 0 100%;
+}
+.single-post .contenido-blog {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.single-post main h3 { 
+    text-align: center; 
+    padding-bottom: 1rem; 
+    border-bottom: 2px dotted #dadada; 
+    margin-bottom: 2rem;
+}
+.contenido-blog.contenedor {
+    padding: 0;
+    width: 100%;
+    max-width: unset;
+}
+
+/** entradas del blog **/
+.attachment-post-thumbnail { display: inherit; }
+.entrada-blog {  margin: 0 auto 2rem auto; border-bottom: 1px solid #dadada; padding-bottom: 2rem;  }
+.entrada-blog:last-of-type { border-bottom: 0; }
+.entrada-blog img{ margin-bottom: 1rem; }
+.entrada-blog h3 {
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+.entrada-blog .enlace { display: flex; justify-content: center; }
+.entrada-blog .enlace a { flex: 0 0 40%;}
+.entrada-blog .boton {margin-top: 1rem;  display: inline-block; width: auto; padding: .5rem 5rem .2rem 5rem; }
+.informacion-meta { 
+    font-family: "BebasNeue-Regular";
+    text-transform: uppercase; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: 1rem auto;
+}
+.informacion-meta p {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.informacion-meta a { color: #25a5d5; text-decoration: none;  }
+.informacion-meta a:hover { color: #25a5d5; }
+.informacion-meta span { color: #25a5d5; }
+.post-categories { margin:0; padding:0; list-style: none; }
+.post-categoria { display: flex; align-items: center; }
+.post-categoria a { margin-left: .5rem; font-size: 1.4rem;  }
+.informacion-meta a:hover { border-bottom: 2px solid #25a5d5; }
+
+.informacion-meta .post-categories li { margin : 0; }
+
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+body.blog h2 {
+    text-align: center;
+}
+body.blog .entrada-blog img{
+    display: inherit;
+}

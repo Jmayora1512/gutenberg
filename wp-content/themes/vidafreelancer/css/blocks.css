@@ -1,0 +1,272 @@
+/** Info Curso **/
+
+@media (min-width:768px) {
+    .informacion-curso-vf .contenido-curso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.informacion-curso-vf ul {
+    list-style: none;
+    margin-bottom: 5rem!important;
+}
+
+.informacion-curso-vf ul li {
+    margin-top: 1rem;
+}
+
+.informacion-curso-vf ul li::before {
+    content: '- ';
+    color: #25a525;
+}
+
+.informacion-curso-vf .texto-curso a {
+    background-color: #82bd58;
+    padding: 1rem;
+    display: block;
+    font-size: 1.4rem;
+    border-radius: .2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/** Testimoniales VF **/
+
+.testimoniales-vf .contenido-testimonial {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .testimoniales-vf .contenido-testimonial {
+        display: grid;
+        /** Rows / Columns **/
+        grid-template: repeat(2, auto) / 1fr 3fr;
+    }
+}
+
+.testimoniales-vf blockquote {
+    font-size: 1.6rem;
+    line-height: 2;
+    position: relative;
+    padding-left: 5rem;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .testimoniales-vf blockquote {
+        grid-column: 1 / 3;
+    }
+}
+
+.testimoniales-vf blockquote::before {
+    content: open-quote;
+    position: absolute;
+    left: 0;
+    top: -5.5rem;
+    font-size: 10rem;
+    color: rgba(255, 255, 255, .6);
+}
+
+.testimoniales-vf img {
+    max-width: 120px;
+    border-radius: 50%;
+}
+
+.testimoniales-vf .texto-testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .testimoniales-vf .texto-testimonial p {
+        text-align: right;
+    }
+}
+
+.testimoniales-vf .texto-testimonial .nombre {
+    font-size: 2.2rem;
+    margin-bottom: .8rem;
+}
+
+.ab-profile-name {
+    font-size: 40px!important;
+    padding: 0;
+}
+
+.ab-block-accordion .ab-accordion-title {
+    background-color: #0693e3;
+    color: #ffffff;
+}
+
+
+/** Precios **/
+
+.wp-block-editor-blocks-pricing-table .column {
+    width: 50%!important;
+}
+
+.imagen-fondo,
+.imagen-fondo ::before {
+    color: #ffffff!important;
+}
+
+.Testimonial-color {
+    background-color: #00d084!important;
+}
+
+.advgb-testimonial-name {
+    font-size: 36px!important;
+}
+
+
+/** Colores  No funciona **/
+
+
+/* .has-azul-background-color {
+    background-color: #25a5d5;
+}
+
+.has-verde-background-color {
+    background-color: #82bd58;
+} */
+
+
+/** Contenido **/
+
+.entry-content>* {
+    margin: 20px auto;
+    max-width: 900px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.entry-content>.alignwide {
+    max-width: 1100px;
+}
+
+.entry-content>.alignfull {
+    margin: 1.5em 0;
+    max-width: 100%;
+}
+
+.entry-content ul,
+.entry-content ol {
+    margin: 1.5em auto;
+    max-width: 900px;
+    list-style-position: outside;
+}
+
+.wp-block-video video {
+    max-width: 900px;
+}
+
+.wp-block-image img {
+    display: block;
+}
+
+.wp-block-image.alignleft,
+.wp-block-image.alignright {
+    width: 100%
+}
+
+.wp-block-image.alignfull img {
+    width: 100vw;
+}
+
+.wp-block-gallery:not(.components-placeholder) {
+    margin: 1.5em auto;
+}
+
+.wp-block-cover-text p {
+    padding: 1.5em 14px;
+}
+
+ul.wp-block-latest-posts.alignwide,
+ul.wp-block-latest-posts.alignfull,
+ul.wp-block-latest-posts.is-grid.alignwide,
+ul.wp-block-latest-posts.is-grid.alignwide {
+    padding: 0 14px;
+}
+
+.wp-block-table {
+    display: block;
+    overflow-x: auto;
+}
+
+.wp-block-table table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+.wp-block-table td,
+.wp-block-table th {
+    padding: .5em;
+}
+
+.entry-content li {
+    margin-left: 0;
+    margin-bottom: 6px;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ul ol,
+.entry-content ol ul {
+    margin: 0 auto;
+}
+
+.entry-content ul ul li,
+.entry-content ol ol li,
+.entry-content ul ol li,
+.entry-content ol ul li {
+    margin-left: 0;
+}
+
+.wp-block-embed.type-video>.wp-block-embed__wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.wp-block-embed.type-video>.wp-block-embed__wrapper>iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.wp-block-quote.is-large {
+    margin: 0 auto 16px;
+}
+
+.wp-block-pullquote>p:first-child {
+    margin-top: 0;
+}
+
+.wp-block-separator {
+    margin: 3em auto;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .wp-block-cover-text p {
+        padding: 1.5em 0;
+    }
+    .entry-content>* {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
